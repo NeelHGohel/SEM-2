@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PART-A</title>
+    <style>
+        .link{
+            .link:focus{
+                color: red; 
+            }
+        }
+        .link a{
+            font-size: 30px;
+        }
+        .firstline{
+            p::first-line{
+                font-size: 30px;
+                color: blue;
+            }
+        }
+        .firstletter{
+            p::first-letter{
+                font-size: 50px;
+                color: rebeccapurple;
+            }
+        }
+        .changecolor{
+            p::selection{
+                background-color: yellow;
+            }
+        }
+        .hover{
+            span:hover{
+                color: red;
+                background-color: yellow;
+                font-size: 30px;
+            }
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            background-color: crimson;
+            }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            }
+    </style>
+</head>
+<body>
+    <div class="link">
+    <a href="https://darshan.ac.in/" target="_blank">Darshan University</a>
+</div>
+    <div class="firstline">
+        <p>
+            If you don't like a test prompt, you can get a different (random) prompt with the "change test" button - or select
+            a specific paragraph to type from the list below. To find out how fast you type, just start typing in the blank textbox
+            on the right of the test prompt. You will see your progress, including errors on the left side as you type. In order to complete the
+            test and save your score, you need to get 100% accuracy. You can fix errors as 
+            you go, or correct them at the end with the help of the spell checker.
+        </p>
+    </div>
+
+    <div class="firstletter">
+        <p>
+            If you don't like a test prompt, you can get a different (random) prompt with the "change test" button - or select
+            a specific paragraph to type from the list below. To find out how fast you type, just start typing in the blank textbox
+            on the right of the test prompt. You will see your progress, including errors on the left side as you type. In order to complete the
+            test and save your score, you need to get 100% accuracy. You can fix errors as 
+            you go, or correct them at the end with the help of the spell checker.
+        </p>
+    </div>
+    <div class="changecolor">
+        <p>
+            If you don't like a test prompt, you can get a different (random) prompt with the "change test" button - or select
+            a specific paragraph to type from the list below. To find out how fast you type, just start typing in the blank textbox
+            on the right of the test prompt. You will see your progress, including errors on the left side as you type. In order to complete the
+            test and save your score, you need to get 100% accuracy. You can fix errors as 
+            you go, or correct them at the end with the help of the spell checker.
+        </p>
+    </div>
+    <div class="hover">
+        <span>mouse over me</span>
+    </div>
+    <br><br><br>
+    <div class="dropdown">
+        <span>Mouse over me</span>
+        <div class="dropdown-content">
+        <p>Kem cho Maja ma!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

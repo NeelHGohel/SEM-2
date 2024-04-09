@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PART-B</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .back{
+            background-image: linear-gradient(130deg, white, pink);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+        .front{
+            background-color:rgb(255, 211, 220);
+            /* background-color: aquamarine; */
+            height: 90%;
+            width: 90%;
+            margin: 2.5%;
+            margin-left: 5%;
+            z-index: 2;
+        }
+        .text{
+            float: right;
+            width: 50%;
+            margin-left: 5%;
+        }
+        #A{
+            color: blue;
+            margin-top: -5%;
+        }
+        #a{
+            color: rgb(202, 201, 201);
+            margin-top: 4%;
+        }
+        #rev{
+            color: gray;
+        }
+        .Select{
+            margin-top: 3%;
+        }
+        .Style{
+            margin-top: 3%;
+        }
+        .Colour{
+            margin-top: 3%;
+        }
+        .Size{
+            margin-top: 3%;
+        }
+        #B1{
+            width: 20%;
+            background-color: white;
+            border-radius: 0px;
+            border: 1px solid black;
+            margin-left: -1%;
+            padding: .5%;
+            margin-top: .5%;
+            background-color: white;
+        }
+        #B2{
+            width: 15%;
+            background-color: white;
+            border-radius: 51px;
+            background-color: white;
+            border: 2px solid black;
+            padding: .5%;
+            margin-top: .5%;
+        }
+        .icon{
+            margin-left: -95%;
+            margin-top: 5%;
+        }
+        .abc{
+            float: right;
+            margin-right: 35%;
+            margin-top: 2%;
+        }
+        .items{
+            margin-top: 3%;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <div class="front">
+            <box-icon name='menu' style="margin-left: 2%; margin-top: 1.5%;"></box-icon>
+            <br>
+            <box-icon name='search-alt-2' id="search" style="margin-left: -39%; margin-top: 1%;"></box-icon>
+            <img src="./pillow.png" height="60%" width="35%" style="margin-top: 8%; margin-left: 6%; float: left;">
+            <div class="text">
+                <p id="A">Back To BedRoom</p>
+                <p id="a">BEDROOM</p>
+                <h2>College Essentials</h2>
+                <p id="rev"><box-icon name='star' type='solid' color='#ebcb3d' >
+                </box-icon><box-icon name='star' type='solid' color='#ebcb3d' >
+                </box-icon><box-icon name='star' type='solid' color='#ebcb3d' >
+                </box-icon><box-icon name='star' type='solid' color='#ebcb3d' >
+                </box-icon><box-icon name='star' color='#fbfbf7' ></box-icon>  4.4(328 Reviews)</p>
+
+                <div class="Select">
+                    <h3>Select Quality</h3>
+                    <button id="B1" style="margin-left: 2%;">Basic</button>
+                    <button id="B1">Premium</button>
+                </div>
+
+                <div class="Style">
+                    <h3>Style</h3>
+                    <button id="B2">Minimal</button>
+                    <button id="B2">Bohemian</button>
+                    <button id="B2">Floral</button>
+                    <button id="B2">Other</button>
+                </div>
+                <div class="Colour">
+                    <h3>Colour</h3><br>
+                    <box-icon name='circle' type='solid' color='#05ecda' ></box-icon>
+                    <box-icon name='circle' type='solid' color='#ed0a37' ></box-icon>
+                    <box-icon name='circle' type='solid' color='#1a1b1b' ></box-icon>
+                    <box-icon name='circle' type='solid' color='#fffafb' ></box-icon>
+
+                </div>
+                <div class="Size">
+                    <h3>Size</h3>
+                    <button id="B2">Twin XL</button>
+                    <button id="B2">Full</button>
+                </div>
+                <div class="items">
+                    <h3>Cusomizable items</h3>
+                    <img src="" style="float: left;">
+                    <div class="abc">
+                    <h4>Blush Plush Comforter</h4>
+                    <p>See Product details</p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <box-icon name='user'></box-icon><br><br>
+                    <box-icon name='cart-download'></box-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .bg{
+            background-color: palegreen;
+            height: 900px;
+            width: 100%;
+        }
+        .animation{
+            animation-name: animation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+        }
+        @keyframes animation{
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: black;
+            }
+            25%{
+                left: 250px;
+                top: 750px;
+                background-color: bisque;
+            }
+            50%{
+                left: 450px;
+                top: 0px;
+                background-color: slategrey;
+            }
+            75%{
+                left: 650px;
+                top: 750px;
+                background-color: brown;
+            }
+            100%{
+                top: 0px;
+                left: 850px;
+                background-color: royalblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="animation"></div>
+</body>
+</html>

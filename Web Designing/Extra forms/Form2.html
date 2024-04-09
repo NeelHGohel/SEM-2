@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+</head>
+<body>
+    <h1>Novell Services Login</h1>
+    <form>
+        <table>
+            <tr>
+                <td>User name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input type="text" required pattern="[0-9]{10}"></td>
+            </tr>
+            <tr>
+                <td>City of <br>employment</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Genber:</td>
+                <td><input type="radio" name="a">Male
+                <input type="radio" name="a">Female</td>
+            </tr>
+            <tr>
+                <td>Web Server</td>
+                <td><select>
+                    <option selected disabled>Choose a server</option>
+                    <option>Chorme</option>
+                    <option>Safari</option>
+                    <option>edge</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Please Specify<br> your role</td>
+                <td><input type="radio" name="b">Admin<br>
+                    <input type="radio" name="b">Engineer<br>
+                    <input type="radio" name="b">Manager<br>
+                    <input type="radio" name="b">Guest
+                    </td>
+            </tr>
+            <tr>
+                <td>Single Sign-on<br> to the Following</td>
+                <td><input type="checkbox">Mail<br>
+                    <input type="checkbox">Payroll<br>
+                    <input type="checkbox">Self-service
+                    </td>
+            </tr>
+            <tr>
+                <td align="right"><input type="submit" value="Login"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

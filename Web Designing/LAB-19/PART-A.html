@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        #f1 {
+            border: 1px solid black;
+        }
+
+        #f2 {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-6 p-5" id="f1">
+                <form>
+                    <table style="padding: auto;">
+                        <tr>
+                            <th>
+                                <h2>Student Registration</h2>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Fullname</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Email :</td>
+                            <td><input type="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile No</td>
+                            <td><input type="text" size="10"></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><textarea name="text" rows="5" cols="5"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Nationality</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Date Of Birth:</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                Male:<input type="radio" name="a" />
+                                Female:<input type="radio" name="a" /></td>
+                        </tr>
+                        <tr>
+                            <td>Higest Degree</td>
+                            <td>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select degree</option>
+                                    <option value="B.Tech.">B.Tech.</option>
+                                    <option value="M.Tech.">M.Tech.</option>
+                                    <option value="Phd">Phd</option>
+                                </select>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>CPI</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>University</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Passing Year</td>
+                            <td>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select your passing year</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit"><input type="submit" value="Cancel"> </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col-6 p-5" id="f2">
+                <form>
+                    <table style="padding: auto;">
+                        <tr>
+                            <th>
+                                <h1 class="mb-5">Covid-19 Vaccine Registration Form</h1>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>First Name:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Aadhar Number:</td>
+                            <td><input type="number" size="12"></td>
+                        </tr>
+                        <tr>
+                            <td>Vaccine Name:</td>
+                            <td>
+                                <select>
+                                    <option disabled selected>Pls select vaccine name</option>
+                                    <option value="Covaxin">Covaxin</option>
+                                    <option value="Covidsheild">Covidsheild</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Vaccination Center Name:</td>
+                            <td>
+                                <select>
+                                    <option disabled selected>Pls select center name</option>
+                                    <option value="Darshan University">Darshan University</option>
+                                    <option value="Rajkot">Rajkot</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Gondal">Gondal</option>
+                                    <option value="Morbi">Morbi</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date of Dose:</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>Dose Number:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="click here"><input type="reset" value="Cancel"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

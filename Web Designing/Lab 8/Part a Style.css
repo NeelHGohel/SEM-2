@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+.logo{
+    float: left;
+}
+.Home{
+    float: right;
+}
+.Main{
+    height: 100px;
+    word-spacing: 20px;
+    
+}
+.photo{
+    position: absolute;
+    z-index: -1;
+}
+.text{
+    color: white;
+    margin-left: 400px;
+
+}
+.Main1{
+    float: right;
+    margin-top: 350px;
+}
+.program1{
+  float: left;
+  margin-left: 25px; 
+  margin-right: 300px;
+  border: solid red;
+  height: 100px;
+
+}

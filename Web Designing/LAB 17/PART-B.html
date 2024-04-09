@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PART-B</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            height: 70vh;
+            width: 90%;
+        }
+
+        #search {
+            border: 0;
+            background-color: navy;
+            border-radius: 50px;
+        }
+
+        #sidebar {
+            height: 100vh;
+
+            background-color: rgb(3, 3, 92);
+        }
+
+        #star {
+            opacity: 50%;
+        }
+
+        #gray {
+            background-color: rgb(167, 164, 164);
+            height: 100vh;
+        }
+
+        #table2 {
+            background-color: white;
+            width: 100%;
+            height: 60vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cotainer">
+        <div class="row">
+            <div class="col-2" id="sidebar">
+                <table>
+                    <tbody class="text-white">
+                        <tr>
+                            <td class="text-white">Open Admin</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" id="search" type="search" placeholder=""
+                                        aria-label="Search"><i class="bi bi-search"></i>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="bi bi-kanban"></i> Dashboard</td>
+                        </tr>
+                        <tr>
+                            <td><i class="bi bi-file-earmark-fill"></i> Pages</td>
+                        </tr>
+                        <tr>
+                            <td><i class="bi bi-list"></i> Admin</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><i class="bi bi-gear"></i> Helpers
+                            <td>></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><i class="bi bi-file-earmark-fill"></i> Media manager
+                            <td>></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="bi bi-toggle-on"></i> Config</td>
+                        </tr>
+                        <tr>
+                            <td><i class="bi bi-sliders2"></i> Api tester</td>
+                        </tr>
+                        <tr>
+                            <td><i class="bi bi-person-bounding-box"></i> Page Designer</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-10">
+
+                        <i class="bi bi-list"></i>
+                    </div>
+                    <div class="col-2">
+                        <i class="bi bi-person-circle"></i>Administrater
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-10">
+                        Page <span class="badge text-bg-secondary">List</span>
+                    </div>
+                    <div class="col-2">
+
+                        <nav aria-label="breadcrumb">
+
+                            <ol class="breadcrumb">
+                                <li><i class="bi bi-house-fill"></i></li>
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Pages</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <br>
+                <div class="gray">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="btn-group btn-sm" role="group">
+                                <button type="button" class="btn btn-outline-success">
+                                    <i class="bi bi-plus"></i> New
+                                </button>
+                            </div>
+
+
+                            <div class="btn-group btn-sm" role="group">
+                                <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    2 Items Selected
+                                </button>
+                            </div>
+                            <div class="btn-group btn-sm" role="group">
+                                <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-funnel-fill"></i> Filter
+                                </button>
+                            </div>
+
+                            <div class="btn-group btn-sm" role="group">
+                                <button type="button" class="btn btn-outline-danger">
+                                    <i class="bi bi-info-circle-fill"></i> Report
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="col-2">
+                            <div class="btn-group btn-sm" role="group">
+                                <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-download"></i> Export
+                                </button>
+
+                                <div class="btn-group btn-sm" role="group">
+                                    <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-calendar2-range-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <table id="table2">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <th>ID<i class="bi bi-chevron-bar-expand"></i></th>
+                                <th>Title</th>
+                                <th>Data <i class="bi bi-funnel-fill text-primary"></i></th>
+                                <th>Tages</th>
+                                <th>Star</th>
+                                <th>Created at</th>
+                                <th>Updated at</th>
+                                <th style="text-align: center;">Action</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>1</td>
+                                <td>Homepages</td>
+                                <td></td>
+                                <td><box-icon type='solid' name='check-square'></box-icon><span
+                                        class="badge text-bg-success">New</span><span
+                                        class="badge text-bg-success">Special</span></td>
+                                <td><i class="bi bi-star-fill text-primary" id="star"></i></td>
+                                <td>2022-02-17 00:51:01</td>
+                                <td>2022-06-25 14:30:21</td>
+                                <td><box-icon name='pencil' type='solid'></box-icon><box-icon
+                                        name='low-vision'></box-icon><box-icon type='solid'
+                                        name='trash-alt'></box-icon><box-icon type='solid' name='flask'></box-icon></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" checked></td>
+                                <td>2</td>
+                                <td>Blog</td>
+                                <td>2022-06-25</td>
+                                <td><box-icon type='solid' name='check-square'></box-icon><span
+                                        class="badge text-bg-success">New</span></td>
+                                <td><i class="bi bi-star-fill text-primary" id="star"></i></td>
+                                <td>2022-06-25 14:30:33</td>
+                                <td>2022-06-25 14:30:33</td>
+                                <td><box-icon name='pencil' type='solid'></box-icon><box-icon
+                                        name='low-vision'></box-icon><box-icon type='solid'
+                                        name='trash-alt'></box-icon><box-icon type='solid' name='flask'></box-icon></td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>3</td>
+                                <td>About-us</td>
+                                <td>2022-06-25</td>
+                                <td><box-icon type='solid' name='check-square'></box-icon></td>
+                                <td><i class="bi bi-star-fill text-primary"></i></td>
+                                <td>2022-06-25 14:36:58</td>
+                                <td>2022-06-25 14:37:40</td>
+                                <td><box-icon name='pencil' type='solid'></box-icon><box-icon
+                                        name='low-vision'></box-icon><box-icon type='solid'
+                                        name='trash-alt'></box-icon><box-icon type='solid' name='flask'></box-icon></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>4</td>
+                                <td>Contact</td>
+                                <td>2022-06-25</td>
+                                <td><box-icon type='solid' name='check-square'></box-icon><span
+                                        class="badge text-bg-success">code</span><span
+                                        class="badge text-bg-success">Special</span></td>
+                                <td><i class="bi bi-star-fill text-primary"></i></td>
+                                <td>2022-06-25 14:37:12</td>
+                                <td>2022-06-25 14:39:16</td>
+                                <td><box-icon name='pencil' type='solid'></box-icon><box-icon
+                                        name='low-vision'></box-icon><box-icon type='solid'
+                                        name='trash-alt'></box-icon><box-icon type='solid' name='flask'></box-icon></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>5</td>
+                                <td>cases</td>
+                                <td></td>
+                                <td><box-icon type='solid' name='check-square'></box-icon></td>
+                                <td><i class="bi bi-star-fill text-primary" id="star"></i></td>
+                                <td>2022-06-25 14:37:22</td>
+                                <td>2022-06-25 14:37:36</td>
+                                <td><box-icon name='pencil' type='solid'></box-icon><box-icon
+                                        name='low-vision'></box-icon><box-icon type='solid'
+                                        name='trash-alt'></box-icon><box-icon type='solid' name='flask'></box-icon></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" checked></td>
+                                <td>6</td>
+                                <td>Clients</td>
+                                <td>2022-06-25</td>
+                                <td><box-icon type='solid' name='check-square'></box-icon><span
+                                        class="badge text-bg-success">Special</span> </td>
+                                <td><i class="bi bi-star-fill text-primary" id="star"></i></td>
+                                <td>2022-06-25 14:37:28</td>
+                                <td>2022-06-25 14:37:28</td>
+                                <td><box-icon name='pencil' type='solid'></box-icon><box-icon
+                                        name='low-vision'></box-icon><box-icon type='solid'
+                                        name='trash-alt'></box-icon><box-icon type='solid' name='flask'></box-icon></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+
+</html>

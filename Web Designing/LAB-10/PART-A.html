@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB-10(A)</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aqua;
+            height: 70vh;
+            width: 100%;
+        }
+        .main{
+            height: 100%;
+            width: 100%;
+        }
+        .header{
+            height: 10%;
+            width: 100%;
+            background-color: brown;
+        }
+        .middle{
+            height: 80%;
+            width: 100%;
+            background-color: yellow;
+        }
+        .footer{
+            height: 10%;
+            width: 100%;
+           
+            background-color: blue;
+        }
+        .entry{
+            width: 60%;
+            height: 60%;
+            float: left;
+        }
+        .e1{
+            width: 100%;
+            height: 20%;
+            background-color: black;
+            padding: 1%;
+            color: white;
+            margin-left: 3%;
+            margin-bottom: 3%;
+        }
+        .sidebar{
+            height: 50%;
+            width: 30%;
+            background-color: black;
+            color: aliceblue;
+            float: right;
+        }
+        @media (max-width:450px){
+            .entry{
+                width: 100%;
+            }
+            .sidebar{
+                width: 100%;
+            }
+        }
+        div{
+            padding: 1%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">Page
+    <div class="header">Header</div>
+    <div class="middle">
+        <div>
+            CONTENT
+        </div>
+    <div class="entry">
+        <div class="e1">Entry</div>
+        <div class="e1">Entry</div>
+        <div class="e1">Entry</div>
+    </div>
+    <div class="sidebar">Side-Bar</div>
+    </div>
+    <div class="footer">
+        &copy;Darshan University-Rajkot
+    </div>
+</div>
+</body>
+</html>
